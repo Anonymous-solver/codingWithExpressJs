@@ -59,12 +59,14 @@
                 .then(data => {
                     const update = document.getElementById("update");
                     update.innerHTML = `
-                <h3>Update: ${data.name}</h3>
-                Price: <input type="text" value = "${data.price}" id ="price">
-                </br>
-                Quantity: <input type="text" value = "${data.quantity}" id ="quantity"> 
-                </br></br>
-                <button onclick="updateProduct('${data._id}')">Submit</button>
+                    <div style='text-align: center;'>
+                        <h3>Update: ${data.name}</h3>
+                        Price: <input type="text" value = "${data.price}" id ="price">
+                        </br>
+                        Quantity: <input style='margin-top: 5px' type="text" value = "${data.quantity}" id ="quantity"> 
+                        </br></br>
+                        <button onclick="updateProduct('${data._id}')">Submit</button>
+                    </div>
                 `
                 })
         }
