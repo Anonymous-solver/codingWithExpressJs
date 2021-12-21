@@ -37,7 +37,7 @@ client.connect(err => {
       // console.log(product);
       collection.insertOne(product)
       .then(result => {
-          console.log("One product added");
+          // console.log("One product added");
           res.redirect('/')
       })
   })

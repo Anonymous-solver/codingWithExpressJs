@@ -32,7 +32,7 @@
                     container.innerHTML = '';
                     products.forEach(product => {
                         const p = document.createElement('p');
-                        p.innerHTML = `${product.name} Price: ${product.price} Quantity: ${product.quantity}
+                        p.innerHTML = `<h3><strong> ${product.name} </strong></h3> Price: ${product.price} Quantity: ${product.quantity}
                         <button onclick = "loadProduct('${product._id}')">Update</button>
                         <button onclick = "deleteProduct(event, '${product._id}')">Delete</button>`;
                         container.appendChild(p);
